@@ -31,5 +31,5 @@ complete -F _kn kn
 #if [ -f '/Users/n640538/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/n640538/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 
 
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"
+#source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc"
+#source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc"

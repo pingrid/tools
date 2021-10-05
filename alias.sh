@@ -41,15 +41,14 @@ alias restart_docker='killall Docker && cd /Applications;open -a Docker;cd ~'
 alias gl='git log --oneline'
 alias mci='mvn clean install'
 alias upt='cd ../../../'
-alias editprofile='open ~/.bash_profile'
-alias edit='sublime ~/.bash_profile &'
+alias edit_bash='sublime ~/.bash_profile &'
 alias delete_merged_branches='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 
 # Back commands
 
-alias update='source ~/.bash_profile'
-alias reload='source ~/.bash_profile'
+alias update_bash='source ~/.bash_profile'
+alias reloas_bash='source ~/.bash_profile'
 
 alias line_push='git fwl'
 
@@ -61,6 +60,7 @@ alias dcs='docker-compose'
 alias dstop='docker-compose stop'
 alias dall='docker-compose up -d'
 alias docker_stop_all='docker rmi -f $(docker images -a -q)'
+
 
 # Navigating in Kurator
 alias keditor='echo -e "\033]6;1;bg;green;brightness;176\a" && title kurator-editor && cd ~/code/nrkno-kurator-editor'
@@ -89,3 +89,5 @@ alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
 alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
+
+
