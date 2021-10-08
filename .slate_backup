@@ -1,0 +1,48 @@
+# configs
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+# abstract positions
+alias full          				move screenOriginX;screenOriginY                    				screenSizeX;screenSizeY
+alias lefthalf      				move screenOriginX;screenOriginY                    				screenSizeX/2;screenSizeY
+alias righthalf     				move screenOriginX+screenSizeX/2;screenOriginY      				screenSizeX/2;screenSizeY
+alias centerhalf    				move screenOriginX+screenSizeX/4;screenOriginY      				screenSizeX/2;screenSizeY
+alias bottomleft    				move screenOriginX;screenOriginY+screenSizeY/2      				screenSizeX/2;screenSizeY/2
+alias topleft       				move screenOriginX;screenOriginY                    				screenSizeX/2;screenSizeY/2
+alias topright      				move screenOriginX+screenSizeX/2;screenOriginY      				screenSizeX/2;screenSizeY/2
+alias bottomright   				move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2      	screenSizeX/2;screenSizeY/2
+alias fullHeightThreeQuarterLeft	move screenOriginX;screenOriginY									screenSizeX/4;screenSizeY
+alias fullHeightOneQuarterRight		move screenOriginX+screenSizeX/2+screenSizeX/4;screenOriginY		screenSizeX/4;screenSizeY
+alias fullHeightOneQuarterLeft		move screenOriginX;screenOriginY									3*screenSizeX/4;screenSizeY
+alias fullHeightThreeQuarterRight	move screenOriginX+screenSizeX/4;screenOriginY						3*screenSizeX/4;screenSizeY
+alias rightScreenFullSize			move screenOriginX+screenSizeX+1;screenOriginY						screenSizeX;screenSizeY
+alias leftScreenFullSize			move screenOriginX-screenSizeX-1;screenOriginY						screenSizeX;screenSizeY
+
+
+alias half 		ctrl;cmd
+alias corner 	shift;ctrl;cmd
+alias quarter 	ctrl;cmd;alt
+alias move		shift;alt;cmd
+
+# location bindings
+bind left:${half} ${lefthalf}
+bind right:${half} ${righthalf}
+bind up:${half} ${full}
+bind down:${half} ${centerhalf}
+bind left:${corner} ${bottomleft}
+bind up:${corner} ${topleft}
+bind right:${corner} ${topright}
+bind down:${corner} ${bottomright}
+bind up:${quarter} ${fullHeightOneQuarterLeft}
+bind right:${quarter} ${fullHeightOneQuarterRight}
+bind down:${quarter} ${fullHeightThreeQuarterRight}
+bind left:${quarter} ${fullHeightThreeQuarterLeft}
+bind right:${move} ${rightScreenFullSize}
+bind left:${move} ${leftScreenFullSize}

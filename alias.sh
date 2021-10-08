@@ -69,7 +69,7 @@ alias kvisning='echo -e "\033]6;1;bg;blue;brightness;176\a" && title kurator-vis
 alias mkbranch="~/code/nrk-make-branch-from-jira-issue/make-branch-from-jira-issue.py -l 7288029804871909241"
 
 
-# Applications 
+# Applications
 alias simplechrome='open -na "Google Chrome" --args "--app=https://url.com"'
 alias webstorm='open -a /Applications/Webstorm.app/ .'
 alias intellij='/usr/local/bin/idea'
@@ -82,12 +82,10 @@ alias mandag='cd ~/code/kurator-toolbox && docker-compose pull && docker-compose
 
 alias hosts='sublime /etc/hosts'
 
-# Java 
+# Java
 alias list_all_java='ls -l /Library/Java/JavaVirtualMachines/'
 alias java_home='/usr/libexec/java_home'
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
 alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 alias j7="export JAVA_HOME=`/usr/libexec/java_home -v 1.7`; java -version"
-
-
